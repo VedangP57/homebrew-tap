@@ -1,0 +1,22 @@
+cask "gitaxon" do
+  version "0.1.0"
+  sha256 :no_check  # replaced automatically by release workflow
+
+  url "https://github.com/VedangP57/GitAxon/releases/download/v#{version}/GitAxon_#{version}_x64.dmg"
+  name "GitAxon"
+  desc "Fast desktop Git GUI — commit graph, multi-repo tabs, conflict resolver"
+  homepage "https://github.com/VedangP57/GitAxon"
+
+  app "GitAxon.app"
+
+  zap trash: [
+    "~/Library/Application Support/com.gitaxon.desktop",
+    "~/Library/Preferences/com.gitaxon.desktop.plist",
+    "~/Library/Caches/com.gitaxon.desktop",
+  ]
+
+  caveats <<~EOS
+    GitAxon is not notarized. If macOS blocks it on first launch, run:
+      xattr -cr /Applications/GitAxon.app
+  EOS
+end
