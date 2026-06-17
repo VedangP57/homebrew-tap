@@ -1,8 +1,8 @@
 cask "gitaxon" do
   version "0.1.0"
-  sha256 :no_check  # replaced automatically by release workflow
+  sha256 ""
 
-  url "https://github.com/VedangP57/GitAxon/releases/download/v#{version}/GitAxon_#{version}_x64.dmg"
+  url "https://github.com/VedangP57/GitAxon/releases/download/v0.1.0/GitAxon_0.1.0_x64.dmg"
   name "GitAxon"
   desc "Fast desktop Git GUI — commit graph, multi-repo tabs, conflict resolver"
   homepage "https://github.com/VedangP57/GitAxon"
