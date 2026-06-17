@@ -1,6 +1,6 @@
 cask "gitaxon" do
   version "0.1.0"
-  sha256 "9012dc4885a1ffb9134a90ab2ec20649ace70aafa89e33860746d5ff954c7b79"
+  sha256 "6f8cd2deb1147518d3013d2e4e55b0915b4025e22d7491b8ee9d1bfcfa9c0daf"
 
   url "https://github.com/VedangP57/GitAxon/releases/download/v#{version}/GitAxon_#{version}_aarch64.dmg"
   name "GitAxon"
@@ -18,5 +18,6 @@ cask "gitaxon" do
   caveats <<~EOS
     GitAxon is not notarized. If macOS blocks it on first launch, run:
       xattr -cr /Applications/GitAxon.app
+    On Intel Macs, Rosetta 2 runs this automatically.
   EOS
 end
