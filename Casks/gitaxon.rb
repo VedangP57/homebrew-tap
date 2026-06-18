@@ -1,8 +1,8 @@
 cask "gitaxon" do
   version "0.1.0"
-  sha256 "6f8cd2deb1147518d3013d2e4e55b0915b4025e22d7491b8ee9d1bfcfa9c0daf"
+  sha256 "71c23a23ba95eb380b50554daa31d777314d8a9151bfe6200430450436ee1923"
 
-  url "https://github.com/VedangP57/GitAxon/releases/download/v#{version}/GitAxon_#{version}_aarch64.dmg"
+  url "https://github.com/VedangP57/GitAxon/releases/download/v#{version}/GitAxon_#{version}_universal.dmg"
   name "GitAxon"
   desc "Fast desktop Git GUI — commit graph, multi-repo tabs, conflict resolver"
   homepage "https://github.com/VedangP57/GitAxon"
@@ -18,6 +18,5 @@ cask "gitaxon" do
   caveats <<~EOS
     GitAxon is not notarized. If macOS blocks it on first launch, run:
       xattr -cr /Applications/GitAxon.app
-    On Intel Macs, Rosetta 2 runs this automatically.
   EOS
 end
