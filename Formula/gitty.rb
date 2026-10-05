@@ -1,25 +1,25 @@
 class Gitty < Formula
   desc "A fast terminal git client with the GitHub Desktop experience"
   homepage "https://github.com/VedangP57/gitty"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/VedangP57/gitty/releases/download/v0.1.1/gitty-aarch64-apple-darwin.tar.xz"
-      sha256 "ba1e5175475bad4e32219daee10a126d38e077e398ed53a4e03ab616aa584cf9"
+      url "https://github.com/VedangP57/gitty/releases/download/v0.1.2/gitty-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "d2be36c23b303cbb406d498a2baf4792a2596e7d1a42de85d5ca702be8618514"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/VedangP57/gitty/releases/download/v0.1.1/gitty-x86_64-apple-darwin.tar.xz"
-      sha256 "55edfbbd01201bef2196cb5dfd5fe1b526769de8c51f1043cd1c698e1950c047"
+      url "https://github.com/VedangP57/gitty/releases/download/v0.1.2/gitty-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "76a915b0eb3093d64dcf959268afc92248f787a5e2b39aeb04ea37507a2b84e9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/VedangP57/gitty/releases/download/v0.1.1/gitty-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6539828a5c828cecc3f0e438ea3f382ac14eef1b066d1893b96cd05ff756d4d0"
+      url "https://github.com/VedangP57/gitty/releases/download/v0.1.2/gitty-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7e1b54e31421211a4e470988d56a2230b083b6156524e13e2a92b0164ad7e6e2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/VedangP57/gitty/releases/download/v0.1.1/gitty-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a4c183b388b0c17955280cfa71a13ec4a26936a40cacfd65c20113b4612385e5"
+      url "https://github.com/VedangP57/gitty/releases/download/v0.1.2/gitty-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "05d4fe7f744aaf85294a92cdd1b8650a83df2f8d8ed29f533dd5e6f8c346f962"
     end
   end
   license "MIT"
