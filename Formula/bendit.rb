@@ -1,8 +1,8 @@
 class Bendit < Formula
   desc "Claude Code plugin that guards a project; run /bendit:adopt to set it up"
   homepage "https://github.com/VedangP57/bendit"
-  url "https://github.com/VedangP57/bendit/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "748ed44b7a739850c5a6253ab8f25ba9eac339d98a3c159ccfe12aae65c40bf2"
+  url "https://github.com/VedangP57/bendit/archive/refs/tags/v0.5.1.tar.gz"
+  sha256 "a929db5aab03151d01354cba60c41b35a6285c4b35d776e6f2be2bb445c80184"
   license "MIT"
 
   def install
